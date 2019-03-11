@@ -123,6 +123,34 @@ services:
      - "21:21"
      - "30000-30009:30000-30009"
     restart: always
+
+  firefox:
+    image: selenoid/vnc:firefox_60.0
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      HUB_HOST: selenium-hub
+
+  chrome:
+    image: selenoid/vnc:chrome_67.0
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      HUB_HOST: selenium-hub
+
+  selenoid-video-recorder:
+    image: selenoid/video-recorder:latest-release
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      HUB_HOST: selenium-hub
+
   selenium-hub:
     image: qaprosoft/selenium-hub:3.1
     env_file:
