@@ -9,24 +9,24 @@
   </browser>
   <browser name="chrome" defaultVersion="67.0">
     <version number="66.0">
-      <region name="stage">
+      <region name="1">
         <host name="34.76.26.31" port="4445" count="5" vnc="ws://34.76.26.31:4445/vnc"/>
       </region>
     </version>
     <version number="67.0">
-      <region name="stage">
+      <region name="1">
         <host name="34.76.26.31" port="4445" count="5" vnc="ws://34.76.26.31:4445/vnc"/>
       </region>
     </version>
   </browser>
   <browser name="firefox" defaultVersion="60.0">
     <version number="59.0">
-      <region name="stage">
+      <region name="1">
         <host name="34.76.26.31" port="4445" count="5" vnc="ws://34.76.26.31:4445/vnc"/>
       </region>
     </version>
     <version number="60.0">
-      <region name="stage">
+      <region name="1">
         <host name="34.76.26.31" port="4445" count="5" vnc="ws://34.76.26.31:4445/vnc"/>
       </region>
     </version>
