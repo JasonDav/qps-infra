@@ -14,7 +14,7 @@ curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compos
 chmod +x /usr/local/bin/docker-compose
 
 # setting up var for elasticsearch
-ehco "-----setting max map count-----"
+echo "-----setting max map count-----"
 sysctl -w vm.max_map_count=262144
 
 echo "-----setup complete-----"
