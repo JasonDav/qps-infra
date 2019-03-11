@@ -17,4 +17,7 @@ chmod +x /usr/local/bin/docker-compose
 echo "-----setting max map count-----"
 sysctl -w vm.max_map_count=262144
 
+echo "-----Giving elasticsearch permissions-----"
+sudo chown -R 1000:1000 .
+
 echo "-----setup complete-----"
