@@ -10,24 +10,24 @@
   <browser name="chrome" defaultVersion="67.0">
     <version number="66.0">
       <region name="1">
-        <host name="130.211.62.142" port="4445" count="5" vnc="ws://130.211.62.142:4445/vnc"/>
+        <host name="35.204.225.245" port="4445" count="5" vnc="ws://35.204.225.245:4445/vnc"/>
       </region>
     </version>
     <version number="67.0">
       <region name="1">
-        <host name="130.211.62.142" port="4445" count="5" vnc="ws://130.211.62.142:4445/vnc"/>
+        <host name="35.204.225.245" port="4445" count="5" vnc="ws://35.204.225.245:4445/vnc"/>
       </region>
     </version>
   </browser>
   <browser name="firefox" defaultVersion="60.0">
     <version number="59.0">
       <region name="1">
-        <host name="130.211.62.142" port="4445" count="5" vnc="ws://130.211.62.142:4445/vnc"/>
+        <host name="35.204.225.245" port="4445" count="5" vnc="ws://35.204.225.245:4445/vnc"/>
       </region>
     </version>
     <version number="60.0">
       <region name="1">
-        <host name="130.211.62.142" port="4445" count="5" vnc="ws://130.211.62.142:4445/vnc"/>
+        <host name="35.204.225.245" port="4445" count="5" vnc="ws://35.204.225.245:4445/vnc"/>
       </region>
     </version>
   </browser>
