@@ -59,38 +59,38 @@ services:
     ports:
      - "50000:50000"
     restart: always
-  # jenkins-slave-api:
-  #   image: qaprosoft/jenkins-slave
-  #   env_file:
-  #    - variables.env
-  #   environment:
-  #    - JENKINS_SLAVE_NAME=jenkins-slave-api
-  #    - JENKINS_SLAVE_WORKERS=5
-  #    - JENKINS_SLAVE_LABELS=qps-slave api qa
-  #   volumes:
-  #    - $HOME/.ssh:/root/.ssh
-  #    - $HOME/.m2:/root/.m2
-  #   ports:
-  #    - "8001:8000"
-  #   depends_on:
-  #    - "jenkins-master"
-  #   restart: always
-  # jenkins-slave-web:
-  #   image: qaprosoft/jenkins-slave
-  #   env_file:
-  #    - variables.env
-  #   environment:
-  #    - JENKINS_SLAVE_NAME=jenkins-slave-web
-  #    - JENKINS_SLAVE_WORKERS=3
-  #    - JENKINS_SLAVE_LABELS=qps-slave web qa
-  #   volumes:
-  #    - $HOME/.ssh:/root/.ssh
-  #    - $HOME/.m2:/root/.m2
-  #   ports:
-  #    - "8000:8000"
-  #   depends_on:
-  #    - "jenkins-master"
-  #   restart: always
+  jenkins-slave-api:
+    image: qaprosoft/jenkins-slave
+    env_file:
+     - variables.env
+    environment:
+     - JENKINS_SLAVE_NAME=jenkins-slave-api
+     - JENKINS_SLAVE_WORKERS=5
+     - JENKINS_SLAVE_LABELS=qps-slave api qa
+    volumes:
+     - $HOME/.ssh:/root/.ssh
+     - $HOME/.m2:/root/.m2
+    ports:
+     - "8001:8000"
+    depends_on:
+     - "jenkins-master"
+    restart: always
+  jenkins-slave-web:
+    image: qaprosoft/jenkins-slave
+    env_file:
+     - variables.env
+    environment:
+     - JENKINS_SLAVE_NAME=jenkins-slave-web
+     - JENKINS_SLAVE_WORKERS=3
+     - JENKINS_SLAVE_LABELS=qps-slave web qa
+    volumes:
+     - $HOME/.ssh:/root/.ssh
+     - $HOME/.m2:/root/.m2
+    ports:
+     - "8000:8000"
+    depends_on:
+     - "jenkins-master"
+    restart: always
   sonarqube:
     image: qaprosoft/sonarqube
     env_file:
